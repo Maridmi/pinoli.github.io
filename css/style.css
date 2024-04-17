@@ -414,6 +414,7 @@ img.bw-3 {
     color: #882100;
     font-size: 18px;
     font-family: 'StyreneAWeb-Bold';
+    text-decoration-style: solid !important;
 }
 
 .main-menu {
@@ -456,9 +457,48 @@ img.bw-3 {
     object-fit: cover;
 }
 
+.main-menu-img-cont {
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(#00000000,#00000062);
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: .5s ease;
+}
+
+.main-menu-img-cont:hover .overlay {
+    opacity: 1;
+}
+
+.ov-text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    bottom: 8%;
+    left: 4%;
+}
+
+.ov-text h2 {
+    font-size: 60px;
+    font-variant-caps: all-petite-caps;
+    margin-bottom: 15px;
+}
+
+.ov-text p {
+    font-size: 16px;
+} 
+
+
+
 img.fresco {
-    width: 110px;
-    height: 110px;
+    width: 120px;
+    height: 120px;
     object-fit: cover;
     z-index: 10;
     position: absolute;
@@ -476,17 +516,17 @@ img.fresco {
     align-items: center;
     justify-content: center;
     margin-bottom: 100px;
+    color: #E35200;
 }
 
 .book-h {
     width: 100%;
-    padding: 11vh 0 9vh 0;
+    padding: 11vh 0 10vh 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
-    color: #E35200;
 }
 
 .book-h h3 {
@@ -498,6 +538,7 @@ img.fresco {
 
 .book-h p {
     font-size: 16px;
+    line-height: 1.4;
 }
 
 .book form {
@@ -537,14 +578,168 @@ img.fresco {
     width: 100%;
 }
 
+.book-inp input::placeholder {
+    color: #E35200;
+    opacity: .6;
+}
+
 input.submit {
     border-radius: 30px;
     padding: 15px 40px;
     border: 1px solid #E35200;
     color: #E35200;
     background-color: #F5F2EB;
-    margin-top: 50px;
+    margin-top: 45px;
     font-family: 'StyreneAWeb-Medium';
 }
 
-/* align-content: start; ---------------------------------*/
+p.book-polit {
+    color: #E35200;
+    opacity: .7;
+    text-align: center;
+    margin-top: 50px;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.book-polit a {
+    color: #E35200;
+}
+
+
+/* -------------------------- FOOTER ------------------------------ */
+
+.map {
+    width: 100%;
+    height: 45vh;
+    border: none;
+}
+
+.map iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+footer {
+    width: 100%;
+    height: 100vh;
+    background-image: url("../img/foo.png");
+    background-size: auto 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+	animation: foo 0.5s linear both;
+	animation-timeline: scroll(root);
+}
+
+.foo-cont {
+    width: 87%;
+    height: 83%;
+    background-color: #F5F2EB;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@keyframes foo {
+	0% {
+		transform: translateY(var(--origin, 0%));
+	}
+	100% {
+		transform: translateY(var(--destination, 0%));
+	}
+}
+
+.foo-cont a {
+    color: #E35200;
+}
+
+.foo-top, .foo-bot {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 40px 75px;
+    color: #E35200;
+}
+
+.foo-top p, .foo-top a {
+    font-family: 'StyreneAWeb-Bold';
+    font-variant-caps: all-petite-caps;
+    line-height: 1;
+}
+
+.foo-top {
+    align-items: flex-start;
+}
+
+.foo-bot {
+    align-items: flex-end;
+}
+
+.foo-left {
+    width: 30%;
+    font-size: 18px;
+}
+
+.foo-center {
+    width: 30%;
+    text-align: center;
+    font-size: 30px;
+}
+
+.foo-right {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: end;
+    font-size: 18px;
+}
+
+.foo-cont img {
+    align-content: center;
+    width: 220px;
+}
+
+.foo-menu {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    font-variant-caps: all-petite-caps;
+    font-size: 18px;
+}
+
+.foo-menu a, .foo-links a {
+    margin: 0;
+    font-family: 'StyreneAWeb-Bold';
+}
+
+.foo-links a {
+    margin: 0;
+    line-height: 1.05;
+    font-family: 'StyreneAWeb-Bold';
+}
+
+.foo-links {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-variant-caps: all-petite-caps;
+    font-size: 25px;
+}
+
+.foo-soc {
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.foo-soc img {
+    width: 32px;
+    margin-left: 15px;
+}

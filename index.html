@@ -71,14 +71,35 @@
         <img src="img/la-vita.svg">
         <h3>Ciao a tutti!<br>Изучите наше меню</h3>
         <p>Атмосфера Италии<br>в самом центре Челябинска!</p>
-        <p>Атмосфера Италии в самом центре Челябинска!</p>
+        <p>Изучите наше меню - вы обязательно найдете то, что ищете.</p>
     </div>
 
     <div class="main-menu-img so-row">
-        <a href="/pinoli.github.io/menu"><img src="img/table-menu.jpg"></a>
-        <a href="/pinoli.github.io/menu"><img src="img/bar.jpg"></a>
+        <a href="/pinoli.github.io/menu">
+            <div class="main-menu-img-cont">
+                <img src="img/table-menu.jpg">
+                <div class="overlay">
+                    <div class="ov-text">
+                        <h2>Кухня</h2>
+                        <p>Блюда по фамильным итальянским рецептам</p>
+                    </div>
+                </div>
+            </div>
+        </a>
 
-        <img src="img/fresco.svg" class="fresco">
+        <a href="/pinoli.github.io/menu">
+            <div class="main-menu-img-cont">
+                <img src="img/bar.jpg">
+                <div class="overlay">
+                    <div class="ov-text">
+                        <h2>Бар</h2>
+                        <p>Напитки в лучших традициях</p>
+                    </div>
+                </div>
+            </div>
+        </a>
+
+        <a href="/pinoli.github.io/menu"><img src="img/menu-menu.svg" class="fresco"></a>
     </div>
 
     <div class="book so-row" id="book">
@@ -96,12 +117,12 @@
 
                 <div class="book-inp">
                     <label for="phone">Телефон</label>
-                    <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required />
+                    <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="+7 900 000 00 00" required />
                 </div>
 
                 <div class="book-inp">
                     <label for="date">Количество гостей</label>
-                    <input type="number" id="number" name="number" min="1" max="12" />
+                    <input type="number" id="number" name="number" min="1" max="12" placeholder="1" required />
                 </div>
 
                 <div class="book-inp">
@@ -115,9 +136,61 @@
                 </div>
             </div>
 
-            <input type="submit" value="ЗАБРОНИРОВАТЬ" class="submit">
+            <input type="submit" value="ЗАБРОНИРОВАТЬ СТОЛ" class="submit">
         </form>
+
+        <p class="book-polit">Нажимая на кнопку “Забронировать стол”<br>Вы соглашаетесь с <a href="https://drive.google.com/file/d/1Cv6nm9pUNhei-XcDFqVo0oUF0Q0f9ce0/view">Политикой конфиденциальности</a>.</p>
     </div>
+
+    <div class="map" style="position:relative;overflow:hidden;">
+        <a href="https://yandex.ru/maps/56/chelyabinsk/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Chelyabinsk</a>
+        <a href="https://yandex.ru/maps/56/chelyabinsk/house/ulitsa_soni_krivoy_28/YkgYdQ5jS0EAQFtvfX10eX1qYQ==/?indoorLevel=1&ll=61.394097%2C55.158424&utm_medium=mapframe&utm_source=maps&z=17.31" style="color:#eee;font-size:12px;position:absolute;top:14px;">Ulitsa Soni Krivoy, 28 — Yandex Maps</a>
+        <iframe src="https://yandex.ru/map-widget/v1/?indoorLevel=1&ll=61.394097%2C55.158424&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1NjA1MjI2NxJG0KDQvtGB0YHQuNGPLCDQp9C10LvRj9Cx0LjQvdGB0LosINGD0LvQuNGG0LAg0KHQvtC90Lgg0JrRgNC40LLQvtC5LCAyOCIKDa-SdUIV_aFcQg%2C%2C&z=17.31" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe>
+    </div>
+
+    <footer>
+        <div class="foo-cont">
+            <div class="foo-top">   
+                <div class="foo-left">
+                    <a href="https://yandex.ru/maps/-/CCUwn-XnGB">Челябинск, ул. Сони Кривой, 28</a>
+                    <p>Пн-Вс: с 12:00 до 22:00</p>
+                </div>
+
+                <div class="foo-center">
+                    <p>ИТАЛЬЯНСКАЯ<br>ТРАТТОРИЯ</p>
+                </div>
+
+                <div class="foo-right">
+                    <p>Developed and Designed by<br>Marina Orlova</p>
+                    <p>© Pinoli 2024</p>
+                </div>
+            </div>
+
+            <img src="img/logo-r.svg">
+
+            <div class="foo-bot">
+                <div class="foo-menu">
+                    <a href="/pinoli.github.io/">Главная</a>
+                    <a href="/pinoli.github.io/menu">Меню</a>
+                    <a href="/pinoli.github.io/about">О нас</a>
+                    <a href="/pinoli.github.io/contacts">Контакты</a>
+                    <a href="#book">Забронировать стол</a>
+                </div>
+
+                <div class="foo-links">
+                    <a href="tel:+79962344640">+7 (996) 234-46-40</a>
+                    <a href="mailto:ipgquaranta@gmail.com">ipgquaranta@gmail.com</a>
+                </div>
+
+                <div class="foo-soc">
+                    <a href="https://t.me/pinoli_che"><img src="img/tele.svg"></a>
+                    <a href="https://instagram.com/pinoli_che?igshid=MzRlODBiNWFlZA=="><img src="img/inst.svg"></a>
+                    <a href="https://ok.ru/group/70000002568344"><img src="img/dno.svg"></a>
+                    <a href="https://vk.com/pinoli_che"><img src="img/vk.svg"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script>
