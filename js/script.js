@@ -1,3 +1,15 @@
+$(window).scroll(function() {
+    if ($(window).scrollTop() > 120) {
+        document.getElementById("navbar").style.opacity = "1";
+        document.getElementById("navbar").style.transition = ".3s";
+    }
+    else {
+        document.getElementById("navbar").style.opacity = "0";
+        document.getElementById("navbar").style.top = "-80px";
+        document.getElementById("navbar").style.transition = ".3s";
+    }
+});
+
 
 let prevScrollpos = window.pageYOffset;
 window.onscroll = function() {
@@ -10,15 +22,6 @@ let currentScrollPos = window.pageYOffset;
     prevScrollpos = currentScrollPos;
 }
 
-$(window).scroll(function() {
-    if ($(window).scrollTop() > 120) {
-        document.getElementById("navbar").style.transition = ".3s";
-    }
-    else {
-        document.getElementById("navbar").style.top = "-80px";
-        document.getElementById("navbar").style.transition = ".3s";
-    }
-});
 
 $(document).ready(function(){
 $("a").on('click', function(event) {
