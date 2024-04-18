@@ -26,6 +26,18 @@
         <a href="#book" class="nav-book">Забронировать стол</a>
     </div>
 
+    <div class="topnav-fixed" id="navbar">
+        <div class="nav-fixed-links">
+            <a href="/pinoli.github.io/menu">Меню</a>
+            <a href="/pinoli.github.io/about">О нас</a>
+            <a href="/pinoli.github.io/contacts">Контакты</a>
+        </div>
+        <div class="nav-fixed-img">
+            <a href="/pinoli.github.io"><img src="img/logo-r.svg"></a>
+        </div>
+        <a href="#book" class="nav-fixed-book">Забронировать стол</a>
+    </div>
+
     <div class="greet">
         <video autoplay muted loop><source src="img/video.mp4" type="video/mp4"></video>
 
@@ -99,7 +111,7 @@
             </div>
         </a>
 
-        <a href="/pinoli.github.io/menu"><img src="img/menu-menu.svg" class="fresco"></a>
+        <a href="/pinoli.github.io/menu"><img src="img/menu-menu-1.svg" class="fresco"></a>
     </div>
 
     <div class="book so-row" id="book">
@@ -193,22 +205,6 @@
     </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script>
-    $(document).ready(function(){
-    $("a").on('click', function(event) {
-        if (this.hash !== "") {
-        event.preventDefault();
-
-        var hash = this.hash;
-
-        $('html, body').animate({
-            scrollTop: $(hash).offset().top
-        }, 800, function(){
-            window.location.hash = hash;
-        });
-        }
-    });
-    });
-    </script>
+    <script src="js/script.js"></script>
 </body>
 </html>

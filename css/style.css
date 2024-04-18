@@ -90,6 +90,9 @@ a {
     padding: 0 20px 0 20px;
 }
 
+
+/* ------------------------------------ NAVBAR ----------------------------------- */
+
 .topnav {
     width: 100vw;
     height: 110px;
@@ -101,23 +104,8 @@ a {
     position: absolute;
 }
 
-.nav-img {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: absolute;
-    z-index: 0;
-    top: 30px;
-    padding-right: 30px;
-}
-
-.topnav img {
-    width: 170px;
-}
-
 .navlist {
-    z-index: 1;
+    width: 30%;
 }
 
 .navlist a {
@@ -126,20 +114,83 @@ a {
     text-decoration: none;
     font-size: 20px;
     margin-right: 25px;
+    text-align: end;
+}
+
+.nav-img {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nav-img img {
+    width: 170px;
 }
 
 .nav-book {
     color: #F5F2EB;
     font-variant-caps: all-petite-caps;
     font-size: 20px;
-    margin-right: 10px;
     text-decoration: 2px solid #F5F2EB;
-    z-index: 1;
+    width: 30%;
+    text-align: end;
 }
 
 .topnav a:hover {
     color: #F5F2EB;
 }
+
+/* -------------------------------- FIXED NAVBAR ----------------------------- */
+
+.topnav-fixed {
+    background-color: #F5F2EB;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 80px;
+    display: block;
+    transition: top 0.3s;
+    z-index: 101;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-fixed-links {
+    width: 30%;
+}
+
+.topnav-fixed a {
+    float: left;
+    display: block;
+    color: #E35200;
+    padding: 15px;
+    text-decoration: none;
+    font-size: 17px;
+    font-variant-caps: all-petite-caps;
+    font-family: 'StyreneAWeb-Medium';
+    font-size: 20px;
+}
+
+.nav-fixed-img {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nav-fixed-img img {
+    width: 130px;
+}
+
+.nav-fixed-book {
+    width: 30%;
+    text-align: end;
+}
+
+/* ------------------------------------ MAIN PAGE ------------------------------- */
 
 .greet {
     width: 100vw;
@@ -315,7 +366,7 @@ img.img-sun {
 		transform: translateY(var(--origin, 0%));
 	}
 	100% {
-		transform: translateY(var(--destination, -70%));
+		transform: translateY(var(--destination, -90%));
 	}
 }
 
@@ -415,6 +466,22 @@ img.bw-3 {
     font-size: 18px;
     font-family: 'StyreneAWeb-Bold';
     text-decoration-style: solid !important;
+    transition: .3s;
+
+    background: linear-gradient(to bottom, brown 0%, brown 100%);
+    background-position: 0 100%;
+    background-repeat: repeat-x;
+    background-size: 1px 2px;
+    padding-bottom: 5px;
+}
+  
+.about-main-text a:hover {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .5s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='brown' stroke-width='2' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
+    background-position: 0 100%;
+    background-size: auto 4px;
+    background-repeat: repeat-x;
+    text-decoration: none;
+    transition: .3s;
 }
 
 .main-menu {
@@ -584,13 +651,19 @@ img.fresco {
 }
 
 input.submit {
-    border-radius: 30px;
-    padding: 15px 40px;
+    /* border-radius: 30px; */
+    padding: 15px 30px;
     border: 1px solid #E35200;
     color: #E35200;
     background-color: #F5F2EB;
-    margin-top: 45px;
+    margin-top: 50px;
     font-family: 'StyreneAWeb-Medium';
+    transition: .5s;
+}
+
+input.submit:hover {
+    background-color: #E35200;
+    color: #F5F2EB;
 }
 
 p.book-polit {
@@ -604,6 +677,14 @@ p.book-polit {
 
 .book-polit a {
     color: #E35200;
+    padding-bottom: 2px;
+    border-bottom: 1px solid #E35200;
+}
+
+.book-polit a:hover {
+    text-decoration: none;
+    color: #ae3700;
+    border-bottom: 1px solid #ae3700;
 }
 
 
@@ -687,7 +768,7 @@ footer {
 .foo-center {
     width: 30%;
     text-align: center;
-    font-size: 30px;
+    font-size: 32px;
 }
 
 .foo-right {
