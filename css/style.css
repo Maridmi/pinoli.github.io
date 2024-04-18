@@ -144,8 +144,8 @@ a {
 /* -------------------------------- FIXED NAVBAR ----------------------------- */
 
 #navbar {
-    opacity: 0;
-    display: flex;
+    /* opacity: 0; */
+    display: none;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
