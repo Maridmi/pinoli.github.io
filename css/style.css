@@ -143,19 +143,22 @@ a {
 
 /* -------------------------------- FIXED NAVBAR ----------------------------- */
 
+#navbar {
+    opacity: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
 .topnav-fixed {
     background-color: #F5F2EB;
     position: fixed;
     top: 0;
     width: 100%;
     height: 80px;
-    display: block;
     transition: top 0.3s;
     z-index: 101;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
 }
 
 .nav-fixed-links {
