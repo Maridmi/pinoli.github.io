@@ -7,7 +7,7 @@ $(window).scroll(function() {
     else {
         document.getElementById("navbar").style.opacity = "0";
         // document.getElementById("navbar").style.display = "none";
-        document.getElementById("navbar").style.top = "-80px";
+        // document.getElementById("navbar").style.top = "-80px";
         document.getElementById("navbar").style.transition = ".3s";
     }
 });

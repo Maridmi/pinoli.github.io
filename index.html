@@ -54,7 +54,7 @@
             вкус итальянских блюд.</h1>
         
         <div class="img-cont">
-            <img src="img/ph.jpg" class="img-1 parallax-layer parallax-image">
+            <img src="img/ph1.png" class="img-1 parallax-layer parallax-image">
             <video autoplay muted loop class="img-2"><source src="img/about.mp4" type="video/mp4"></video>
             <img src="img/architecture.jpg" class="img-3">
             <img src="img/girls.jpg" class="img-4">
@@ -68,7 +68,7 @@
             <img src="img/bw-2.png" class="bw-2">
             <img src="img/bw-3.png" class="bw-3">
             
-            <h2>la vita e bella,<br>il cibo e delizioso</h2>
+            <h2>Cucina italiana. Gusto perfetto</h2>
             <p class="year">EST. 2023</p>
             <div class="about-main-text">
                 <p>Итальянские традиции, стиль и, конечно, известная во всем мире кухня — <br>
@@ -116,7 +116,7 @@
 
     <div class="book so-row" id="book">
         <div class="book-h">
-            <h3>Бронь Столика</h3>
+            <h3>Забронировать стол</h3>
             <p>Хотите провести незабываемый вечер в уютной атмосфере?<br>Заполните форму и забронируйте столик в Pinoli!</p>
         </div>
 
@@ -129,29 +129,49 @@
 
                 <div class="book-inp">
                     <label for="phone">Телефон</label>
-                    <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="+7 900 000 00 00" required />
+                    <input type="tel" id="phone" name="phone" minlength="10" maxlength="18" placeholder="+7 900 000 00 00" required />
                 </div>
 
                 <div class="book-inp">
                     <label for="date">Количество гостей</label>
-                    <input type="number" id="number" name="number" min="1" max="12" placeholder="1" required />
+                    <input type="number" id="number" name="number" min="1" max="12" value="1" />
                 </div>
 
                 <div class="book-inp">
                     <label for="date">Дата</label>
-                    <input type="date" id="date" name="date" min="<?= date('Y-m-d'); ?>" max="2024-12-31" required />
+                    <input type="date" id="date" name="date" required />
                 </div>
 
-                <div class="book-inp">
+                <div class="book-time">
                     <label for="time">Время</label>
-                    <input type="time" id="time" name="time" min="12:00" max="21:00" required />
+                    <div class="book-time-select">
+                        <select name="hh" id="hh">
+                            <option value="12">12</option>
+                            <option value="13">13</option>
+                            <option value="14">14</option>
+                            <option value="15">15</option>
+                            <option value="16">16</option>
+                            <option value="17">17</option>
+                            <option value="18">18</option>
+                            <option value="19">19</option>
+                            <option value="20">20</option>
+                            <option value="21">21</option>
+                        </select>
+                        <p>:</p>
+                        <select name="mm" id="mm">
+                            <option value="00">00</option>
+                            <option value="15">15</option>
+                            <option value="30">30</option>
+                            <option value="45">45</option>
+                        </select>
+                    </div>
                 </div>
             </div>
 
-            <input type="submit" value="ЗАБРОНИРОВАТЬ СТОЛ" class="submit">
+            <input type="submit" value="ЗАБРОНИРОВАТЬ" class="submit">
         </form>
 
-        <p class="book-polit">Нажимая на кнопку “Забронировать стол”<br>Вы соглашаетесь с <a href="https://drive.google.com/file/d/1Cv6nm9pUNhei-XcDFqVo0oUF0Q0f9ce0/view">Политикой конфиденциальности</a>.</p>
+        <p class="book-polit">Нажимая на кнопку “Забронировать”,<br>вы соглашаетесь с <a href="https://drive.google.com/file/d/1Cv6nm9pUNhei-XcDFqVo0oUF0Q0f9ce0/view">Политикой конфиденциальности</a>.</p>
     </div>
 
     <div class="map" style="position:relative;overflow:hidden;">
@@ -206,5 +226,7 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="js/script.js"></script>
+
+    <script>document.querySelector("#date").valueAsDate = new Date();</script>
 </body>
 </html>
