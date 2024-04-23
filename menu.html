@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<head>
+    <title>MENU PINOLI</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/navlogo.png" type="image/x-icon">
+</head>
+
+<body>
+    <div class="body-cont">
+    <div class="topnav so-row">
+        <div class="navlist">
+            <a href="/pinoli.github.io/menu">Меню</a>
+            <a href="/pinoli.github.io/about">О нас</a>
+            <a href="/pinoli.github.io/contacts">Контакты</a>
+        </div>
+        <div class="nav-img">
+            <a href="/pinoli.github.io"><img src="img/logo-w.svg"></a>
+        </div>
+        <a href="#book" class="nav-book">Забронировать стол</a>
+    </div>
+
+    <div class="topnav-fixed so-row" id="navbar">
+        <div class="nav-fixed-links">
+            <a href="/pinoli.github.io/menu">Меню</a>
+            <a href="/pinoli.github.io/about">О нас</a>
+            <a href="/pinoli.github.io/contacts">Контакты</a>
+        </div>
+        <div class="nav-fixed-img">
+            <a href="/pinoli.github.io"><img src="img/logo-r.svg"></a>
+        </div>
+        <a href="#book" class="nav-fixed-book">Забронировать стол</a>
+    </div>
+
+    <div class="menu-cover">
+        <div class="menu-cover-desc">
+            <h2>Hi!</h2>
+        </div>
+
+        <img src="img/menu.jpg">
+    </div>
+
+    <div class="menu-greet">
+
+    </div>
+
+    <div class="menu-items">
+        <h2>Пицца</h2>
+        
+        <div class="menu-items-cont so-row">
+            <div class="menu-card">
+                <img src="img/menu/p1.jpg">
+                <div class="menu-card-desc">
+                    <h4>Каприччоза</h4>
+                    <p>400 ₽</p>
+                </div>
+            </div>
+
+            <div class="menu-card">
+                <img src="img/menu/p1.jpg">
+                <div class="menu-card-desc">
+                    <h4>Каприччоза</h4>
+                    <p>400 ₽</p>
+                </div>
+            </div>
+
+            <div class="menu-card">
+                <img src="img/menu/p1.jpg">
+                <div class="menu-card-desc">
+                    <h4>Каприччоза</h4>
+                    <p>400 ₽</p>
+                </div>
+            </div>
+
+            <div class="menu-card">
+                <img src="img/menu/p1.jpg">
+                <div class="menu-card-desc">
+                    <h4>Каприччоза</h4>
+                    <p>400 ₽</p>
+                </div>
+            </div>
+
+            <div class="menu-card">
+                <img src="img/menu/p1.jpg">
+                <div class="menu-card-desc">
+                    <h4>Каприччоза</h4>
+                    <p>400 ₽</p>
+                </div>
+            </div>
+        </div>
+
+        <img class="menu-img" src="img/pizza.png">
+    </div>
+
+    <div class="book so-row" id="book">
+        <div class="book-h">
+            <h3>Забронировать стол</h3>
+            <p>Хотите провести незабываемый вечер в уютной атмосфере?<br>Заполните форму и забронируйте столик в Pinoli!</p>
+        </div>
+
+        <form action="/pinoli.github.io/submitted">
+            <div class="form-row">
+                <div class="book-inp">
+                    <label for="name">Ваше имя</label>
+                    <input type="text" id="name" name="name" placeholder="Введите имя" required />
+                </div>
+
+                <div class="book-inp">
+                    <label for="phone">Телефон</label>
+                    <input type="tel" id="phone" name="phone" minlength="10" maxlength="18" placeholder="+7 900 000 00 00" required />
+                </div>
+
+                <div class="book-inp">
+                    <label for="date">Количество гостей</label>
+                    <input type="number" id="number" name="number" min="1" max="12" value="1" />
+                </div>
+
+                <div class="book-inp">
+                    <label for="date">Дата</label>
+                    <input type="date" id="date" name="date" required />
+                </div>
+
+                <div class="book-time">
+                    <label for="time">Время</label>
+                    <div class="book-time-select">
+                        <select name="hh" id="hh">
+                            <option value="12">12</option>
+                            <option value="13">13</option>
+                            <option value="14">14</option>
+                            <option value="15">15</option>
+                            <option value="16">16</option>
+                            <option value="17">17</option>
+                            <option value="18">18</option>
+                            <option value="19">19</option>
+                            <option value="20">20</option>
+                            <option value="21">21</option>
+                        </select>
+                        <p>:</p>
+                        <select name="mm" id="mm">
+                            <option value="00">00</option>
+                            <option value="15">15</option>
+                            <option value="30">30</option>
+                            <option value="45">45</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <input type="submit" value="ЗАБРОНИРОВАТЬ" class="submit">
+        </form>
+
+        <p class="book-polit">Нажимая на кнопку “Забронировать”,<br>вы соглашаетесь с <a href="https://drive.google.com/file/d/1Cv6nm9pUNhei-XcDFqVo0oUF0Q0f9ce0/view">Политикой конфиденциальности</a>.</p>
+    </div>
+
+    <div class="map" style="position:relative;overflow:hidden;">
+        <a href="https://yandex.ru/maps/org/pinoli/234549211308/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Pinoli</a>
+        <a href="https://yandex.ru/maps/56/chelyabinsk/category/pizzeria/184106392/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:14px;">Pizzeria in Chelyabinsk</a>
+        <a href="https://yandex.ru/maps/56/chelyabinsk/category/restaurant/184106394/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:28px;">Restaurant in Chelyabinsk</a>
+        <iframe src="https://yandex.ru/map-widget/v1/?indoorLevel=1&ll=61.393247%2C55.158195&mode=search&oid=234549211308&ol=biz&z=16.63" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+    </div>
+</div>
+
+    <footer>
+        <div class="foo-cont">
+            <div class="foo-top">   
+                <div class="foo-left">
+                    <a href="https://yandex.ru/maps/-/CCUwn-XnGB">Челябинск, ул. Сони Кривой, 28</a>
+                    <p>Пн-Вс: с 12:00 до 22:00</p>
+                </div>
+
+                <div class="foo-center">
+                    <p>ИТАЛЬЯНСКАЯ<br>ТРАТТОРИЯ</p>
+                </div>
+
+                <div class="foo-right">
+                    <p>Developed and Designed by<br>Marina Orlova</p>
+                    <p>© Pinoli 2024</p>
+                </div>
+            </div>
+
+            <img src="img/logo-r.svg">
+
+            <div class="foo-bot">
+                <div class="foo-menu">
+                    <a href="/pinoli.github.io/">Главная</a>
+                    <a href="/pinoli.github.io/menu">Меню</a>
+                    <a href="/pinoli.github.io/about">О нас</a>
+                    <a href="/pinoli.github.io/contacts">Контакты</a>
+                    <a href="#book">Забронировать стол</a>
+                </div>
+
+                <div class="foo-links">
+                    <a href="tel:+79962344640">+7 (996) 234-46-40</a>
+                    <a href="mailto:ipgquaranta@gmail.com">ipgquaranta@gmail.com</a>
+                </div>
+
+                <div class="foo-soc">
+                    <a href="https://t.me/pinoli_che"><img src="img/tele.svg"></a>
+                    <a href="https://instagram.com/pinoli_che?igshid=MzRlODBiNWFlZA=="><img src="img/inst.svg"></a>
+                    <a href="https://ok.ru/group/70000002568344"><img src="img/dno.svg"></a>
+                    <a href="https://vk.com/pinoli_che"><img src="img/vk.svg"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+
+    <script>document.querySelector("#date").valueAsDate = new Date();</script>
+</body>
+</html>

@@ -91,7 +91,7 @@ a:hover {
 }
 
 .so-row {
-    padding: 0 20px 0 20px;
+    padding: 0 30px;
 }
 
 
@@ -99,7 +99,7 @@ a:hover {
 
 .topnav {
     width: 100vw;
-    height: 110px;
+    height: 125px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -117,7 +117,8 @@ a:hover {
     font-variant-caps: all-petite-caps;
     text-decoration: none;
     font-size: 20px;
-    margin-right: 25px;
+    /* margin-right: 25px; */
+    padding-right: 30px;
     text-align: end;
 }
 
@@ -153,6 +154,7 @@ a:hover {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    transition: .3s;
 }
 
 .topnav-fixed {
@@ -161,7 +163,6 @@ a:hover {
     top: 0;
     width: 100%;
     height: 80px;
-    transition: top 0.3s;
     z-index: 101;
 }
 
@@ -169,11 +170,14 @@ a:hover {
     width: 30%;
 }
 
+.nav-fixed-links a {
+    padding-right: 30px;
+}
+
 .topnav-fixed a {
     float: left;
     display: block;
     color: #E35200;
-    padding: 15px;
     text-decoration: none;
     font-size: 17px;
     font-variant-caps: all-petite-caps;
@@ -222,7 +226,7 @@ a:hover {
 
 .greet-cont {
     width: 70%;
-    margin-top: 7vh;
+    margin-top: 9vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -240,7 +244,7 @@ a:hover {
     font-variant-caps: all-petite-caps;
     text-align: center;
     transform: rotate(-7deg);
-    margin-bottom: 7vh;
+    margin: 22px 0 8vh 0;
 }
 
 img.greet-round-img {
@@ -276,7 +280,7 @@ img.greet-round-img {
 .main-pics h1 {
     margin-top: 70px;
     width: 100%;
-    font-size: 48px;
+    font-size: 52px;
     text-align: center;
     font-variant-caps: all-petite-caps;
     z-index: 2;
@@ -300,24 +304,24 @@ img.img-1 {
 }
 
 video.img-2 {
-    width: 36vw;
+    width: 37vw;
     height: 95vh;
     object-fit: cover;
     z-index: 1;
     position: absolute;
     top: 55vh;
-    left: 60px;
+    left: 30px;
 	animation: scale2 0.5s linear both;
 	animation-timeline: scroll(root);
 }
 
 img.img-3 {
-    width: 38vw;
+    width: 39vw;
     object-fit: cover;
     z-index: -2;
     position: absolute;
-    top: 50vh;
-    right: 5%;
+    top: 48vh;
+    right: 30px;
 	animation: scale3 0.5s linear both;
 	animation-timeline: scroll(root);
 }
@@ -628,7 +632,7 @@ img.fresco {
 }
 
 .form-row {
-    width: 85%;
+    width: 90%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -665,6 +669,10 @@ img.fresco {
     outline: none;
 }
 
+input[type="date"] {
+    color: #E35200;
+}
+
 input.submit {
     /* border-radius: 30px; */
     padding: 15px 30px;
@@ -693,13 +701,14 @@ p.book-polit {
 .book-polit a {
     color: #E35200;
     padding-bottom: 2px;
-    border-bottom: 1px solid #E35200;
+    /* border-bottom: 1px solid #E35200; */
 }
 
 .book-polit a:hover {
     text-decoration: none;
-    color: #ae3700;
-    border-bottom: 1px solid #ae3700;
+    opacity: .7;
+    /* color: #ae3700; */
+    /* border-bottom: 1px solid #ae3700; */
 }
 
 .book-time {
@@ -738,7 +747,7 @@ select {
     -moz-appearance: none;
     text-indent: 1px;
     text-overflow: '';
-  }
+}
 
 .book-time option {
     padding: 15px ;
@@ -888,4 +897,86 @@ footer {
 .foo-soc img {
     width: 32px;
     margin-left: 15px;
+}
+
+
+
+
+
+/* -------------------------------- MENU PAGE ------------------------------------------- */
+
+.menu-cover {
+    width: 100%;
+    height: 100vh;
+    background-color: #00000052;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.menu-cover-desc {
+    color: #F5F2EB;
+    width: 70%;
+}
+
+.menu-cover-desc h2 {
+    font-size: 100px;
+    text-align: center;
+}
+
+.menu-cover img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    z-index: -1;
+}
+
+.menu-items {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #E35200;
+}
+
+.menu-items h2 {
+    font-size: 70px;
+    font-variant-caps: all-petite-caps;
+    margin: 60px 0;
+}
+
+.menu-items-cont { 
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 40px 20px;
+}
+
+.menu-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.menu-card img {
+    height: 60vh;
+    width: 100%;
+    object-fit: cover;
+}
+
+.menu-card-desc h4{
+    font-size: 20px;
+}
+
+.menu-card-desc p{
+    font-size: 18px;
+}
+
+
+img.menu-img {
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
 }

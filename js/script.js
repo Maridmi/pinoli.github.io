@@ -1,13 +1,13 @@
 $(window).scroll(function() {
-    if ($(window).scrollTop() > 120) {
-        document.getElementById("navbar").style.opacity = "1";
+    if ($(window).scrollTop() > 130) {
+        // document.getElementById("navbar").style.opacity = "1";
         document.getElementById("navbar").style.display = "flex";
         document.getElementById("navbar").style.transition = ".3s";
     }
     else {
-        document.getElementById("navbar").style.opacity = "0";
-        // document.getElementById("navbar").style.display = "none";
-        // document.getElementById("navbar").style.top = "-80px";
+        // document.getElementById("navbar").style.opacity = "0";
+        document.getElementById("navbar").style.display = "none";
+        document.getElementById("navbar").style.top = "-80px";
         document.getElementById("navbar").style.transition = ".3s";
     }
 });
