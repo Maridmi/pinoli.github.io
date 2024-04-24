@@ -744,8 +744,8 @@ p.book-polit {
 }
 
 select {
-    -webkit-appearance: none;
-    -moz-appearance: none;
+    /* -webkit-appearance: none;
+    -moz-appearance: none; */
     text-indent: 1px;
     text-overflow: '';
 }
@@ -940,7 +940,7 @@ img.cover-top {
 }
 
 .cover-buttons {
-    margin-top: 70px;
+    margin-top: 90px;
 }
 
 .cover-desc a {
@@ -1066,58 +1066,4 @@ img.menu-img {
     width: 100%;
     height: 50vh;
     object-fit: cover;
-}
-
-
-/* ---------------------------- ABOUT PAGE ------------------------------ */
-
-.not-main a, a.not-main {
-    color: #E35200 !important;
-}
-
-.not-main a:hover, a.not-main:hover {
-    color: #E35200 !important;
-}
-
-.cover-about {
-    width: 100%;
-    color: #E35200;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.cover-about-desc {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    margin-top: 25vh;
-}
-
-.cover-about-desc img {
-    width: 250px;
-}
-
-.cover-about-desc h2 {
-    font-size: 100px;
-    font-variant-caps: all-petite-caps;
-    text-align: center;
-    transform: rotate(-7deg);
-    margin-top: 22px;
-}
-
-.about-greet {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: #E35200;
-    text-align: center;
-    font-size: 26px;
-    font-variant-caps: all-petite-caps;
-    padding: 60px 0;
-}
-
-.about-greet img {
-    width: 110px;
 }

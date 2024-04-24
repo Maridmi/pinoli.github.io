@@ -1,0 +1,164 @@
+.not-main a, a.not-main {
+    color: #E35200 !important;
+}
+
+.not-main a:hover, a.not-main:hover {
+    color: #E35200 !important;
+}
+
+.cover-about {
+    width: 100%;
+    color: #E35200;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cover-about-desc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 25vh;
+}
+
+.cover-about-desc img {
+    width: 250px;
+}
+
+.cover-about-desc h2 {
+    font-size: 100px;
+    font-variant-caps: all-petite-caps;
+    text-align: center;
+    transform: rotate(-7deg);
+    margin-top: 22px;
+    z-index: 100;
+}
+
+.about-greet {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #E35200;
+    text-align: center;
+    font-size: 26px;
+    font-variant-caps: all-petite-caps;
+    padding: 60px 0;
+}
+
+.about-greet img {
+    width: 110px;
+}
+
+
+/* ------------------------- CAROUSEL ---------------------------- */
+
+.carousel {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-top: -15px;
+}
+
+  .carousel__list {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    perspective: 300px;
+  }
+  
+  .carousel__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 26%;
+    height: 74vh;
+    /* box-shadow: 0px 2px 8px 0px rgba(50, 50, 50, 0.5); */
+    position: absolute;
+    transition: all .3s ease-in;
+  }
+    
+  .carousel__item:nth-child(1) {
+      background-image: url("../img/bar.jpg");
+      background-size: auto 100%;
+      object-fit: cover;
+    }
+    .carousel__item:nth-child(2) {
+        background-image: url("../img/girls.jpg");
+        background-size: auto 100%;
+      object-fit: cover;
+    }
+    .carousel__item:nth-child(3) {
+        background-image: url("../img/menu.jpg");
+        background-size: auto 100%;
+      object-fit: cover;
+    }
+    .carousel__item:nth-child(4) {
+        background-image: url("../img/table-menu.jpg");
+        background-size: auto 100%;
+      object-fit: cover;
+    }
+    .carousel__item:nth-child(5) {
+        background-image: url("../img/ph1.png");
+        background-size: auto 100%;
+      object-fit: cover;
+    }
+    
+    .carousel__item:nth-child(6) {
+        background-image: url("../img/table-menu.jpg");
+        background-size: auto 100%;
+      object-fit: cover;
+    }
+    .carousel__item:nth-child(7) {
+        background-image: url("../img/ph1.png");
+        background-size: auto 100%;
+      object-fit: cover;
+    }
+    
+    .carousel__item[data-pos="0"] {
+      z-index: 5;
+    }
+    
+    .carousel__item[data-pos="-1"] {
+      transform: translateX(-100%) scale(.9);
+      cursor: pointer;
+      z-index: 4;
+    }
+    
+    .carousel__item[data-pos="1"] {
+      transform: translateX(100%) scale(.9);
+      cursor: pointer;
+      z-index: 4;
+    }
+    
+    .carousel__item[data-pos="-2"] {
+      transform: translateX(-170%) scale(.8);
+      cursor: pointer;
+      z-index: 3;
+    }
+    
+    .carousel__item[data-pos="2"] {
+      transform: translateX(170%) scale(.8);
+      cursor: pointer;
+      z-index: 3;
+    }
+
+    .carousel__item[data-pos="-3"],
+    .carousel__item[data-pos="3"] {
+      opacity: 0;
+    }
+    
+    .carousel__item[data-pos="-3"] {
+      transform: translateX(-210%) scale(.6);
+      cursor: pointer;
+      z-index: 2;
+    }
+    
+    .carousel__item[data-pos="3"] {
+      transform: translateX(210%) scale(.6);
+      cursor: pointer;
+      z-index: 2;
+    }
