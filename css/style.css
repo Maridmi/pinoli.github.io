@@ -1022,7 +1022,7 @@ img.cover-back {
 
 .menu-items-cont { 
     display: grid;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: 24% 24% 24% 24%;
     gap: 40px 20px;
     margin-bottom: 60px;
 }
@@ -1041,14 +1041,17 @@ img.cover-back {
 }
 
 .menu-card-desc h3 {
-    font-size: 29px;
+    font-size: 27px;
     font-variant-caps: all-petite-caps;
     margin-bottom: 10px;
 }
 
 .menu-card-desc h4 {
     font-size: 15px;
+    opacity: .7;
     margin-bottom: 14px;
+    line-height: 1.2;
+    letter-spacing: -0.03em;
     font-family: 'StyreneAWeb-Regular';
 }
 
