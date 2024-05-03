@@ -551,16 +551,16 @@ img.bw-3 {
     background: linear-gradient(#00000000,#00000062);
     width: 100%;
     height: 100%;
-    /* opacity: 0; */
     transition: .5s ease;
+    /* opacity: 0; */
 }
-
+/* 
 .main-menu-img-cont:hover .overlay {
     opacity: 1;
-}
+} */
 
 .ov-text {
-    color: white;
+    color: #f7f4ef;
     font-size: 20px;
     position: absolute;
     bottom: 8%;
@@ -568,14 +568,22 @@ img.bw-3 {
 }
 
 .ov-text h2 {
-    font-size: 60px;
+    font-size: 90px;
     font-variant-caps: all-petite-caps;
     margin-bottom: 15px;
+    width: 100%;
 }
 
 .ov-text p {
     font-size: 16px;
+    display: none;
+    transition: .5s ease;
 } 
+
+.overlay:hover .ov-text p {
+    display: block;
+    transition: .5s ease;
+}
 
 
 
@@ -902,14 +910,23 @@ footer {
 
 
 
+/* ------------------------------ NOT MAIN HEADER ------------------------------ */
 
+.not-main a, a.not-main {
+    color: #E35200 !important;
+    font-family: 'StyreneAWeb-Medium';
+}
+
+.not-main a:hover, a.not-main:hover {
+    color: #E35200 !important;
+}
 
 /* -------------------------------- MENU PAGE ------------------------------------------- */
 
 .cover {
     width: 100%;
     height: 100vh;
-    background-color: #00000059;
+    background-color: #00000079;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -932,7 +949,7 @@ img.cover-top {
 }
 
 .cover-desc h2 {
-    font-size: 100px;
+    font-size: 180px;
     text-align: center;
     font-variant-caps: all-petite-caps;
     transform: rotate(-7deg);
@@ -940,7 +957,7 @@ img.cover-top {
 }
 
 .cover-buttons {
-    margin-top: 90px;
+    margin-top: 110px;
 }
 
 .cover-desc a {
@@ -1069,4 +1086,130 @@ img.menu-img {
     width: 100%;
     height: 50vh;
     object-fit: cover;
+}
+
+
+/* -------------------------------- CONTACT PAGE ------------------------------------------- */
+
+.contact-cont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #E35200;
+    width: 100%;
+    padding: 140px 0 100px 0;
+}
+
+.contact-cont h2 {
+    font-size: 125px;
+    font-variant-caps: all-petite-caps;
+    text-align: center;
+    transform: rotate(-7deg);
+    margin-bottom: 50px;
+}
+
+.contact-links {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.c-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+
+.c-link p {
+    font-size: 17px;
+    font-variant-caps: all-petite-caps;
+    margin-bottom: 10px;
+    opacity: .6;
+}
+
+.c-link a, .c-link h4 {
+    color: #E35200;
+    font-size: 19px;
+    font-family: 'StyreneAWeb-Medium';
+    margin: 0;
+}
+
+.cont-soc img {
+    width: 38px;
+    margin: 5px;
+}
+
+.c-buttons {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.c-buttons a {
+    padding: 7px 25px 11px 25px;
+    font-variant-caps: all-petite-caps;
+    font-family: 'StyreneAWeb-Medium';
+    font-size: 22px;
+    margin: 6px;
+}
+
+.button-cont-left {
+    border: 1px solid #E35200;
+    background-color: #E35200;
+    color: #F5F2EB;
+    transition: .4s;
+}
+
+.button-cont-left:hover {
+    border: 1px solid #f66f21;
+    background-color: #f66f21;
+    color: #F5F2EB;
+    transition: .4s;
+}
+
+.button-cont-right {
+    border: 1px solid #E35200;
+    color: #E35200;
+}
+
+.button-cont-right:hover {
+    border: 1px solid #E35200;
+    background-color: #E35200;
+    color: #F5F2EB;
+}
+
+.bottom-img-cont {
+    width: 100%;
+    height: 64vh;
+    background-color: #00000052;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.bottom-img-cont h2 {
+    color: #F5F2EB;
+    font-size: 130px;
+    text-align: center;
+    font-variant-caps: all-petite-caps;
+    transform: rotate(-7deg);
+    line-height: .75;
+    margin: 0;
+}
+
+.bottom-img-cont img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    z-index: -1;
 }

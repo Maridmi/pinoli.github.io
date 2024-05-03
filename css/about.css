@@ -1,11 +1,3 @@
-.not-main a, a.not-main {
-  color: #E35200 !important;
-}
-
-.not-main a:hover, a.not-main:hover {
-  color: #E35200 !important;
-}
-
 .cover-about {
   width: 100%;
   color: #E35200;
@@ -33,71 +25,6 @@
   transform: rotate(-7deg);
   margin-top: 22px;
   z-index: 100;
-}
-
-.about-greet {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  color: #E35200;
-  text-align: center;
-  margin: 140px 0 130px 0;
-  text-align: center;
-  width: 100%;
-}
-
-.about-greet-text {
-  position: relative;
-  width: 48%;
-}
-
-.about-greet h1 {
-  padding-top: 95px;
-  font-size: 54px;
-  font-variant-caps: all-petite-caps;
-}
-
-.about-greet p {
-  font-size: 17px;
-  line-height: 1.5;
-  letter-spacing: -0.02em;
-  margin-bottom: 25px;
-}
-
-.about-greet img {
-  width: 105px;
-  object-fit: cover;
-  z-index: 10;
-  position: absolute;
-  top: 0;
-  left: 43%;
-  animation: rot-sun 0.5s linear both;
-  animation-timeline: scroll(root);
-  rotate: 240deg;
-}
-
-.about-greet-text a {  
-  color: #E35200;
-  font-variant-caps: all-petite-caps;
-  font-size: 20px;
-  font-family: 'StyreneAWeb-Bold';
-  text-decoration-style: solid !important;
-  transition: .3s;
-
-  background: linear-gradient(to bottom, #E35200 0%, #E35200 100%);
-  background-position: 0 100%;
-  background-repeat: repeat-x;
-  background-size: 1px 2px;
-  padding-bottom: 5px;
-}
-
-.about-greet-text a:hover {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .5s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='orange' stroke-width='2' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
-  background-position: 0 100%;
-  background-size: auto 4px;
-  background-repeat: repeat-x;
-  text-decoration: none;
-  transition: .3s;
 }
 
 
@@ -218,9 +145,75 @@
   z-index: 2;
 }
 
-
-
 /* ----------------------------------------- */
+
+
+.about-greet {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #E35200;
+  text-align: center;
+  margin: 140px 0 130px 0;
+  text-align: center;
+  width: 100%;
+}
+
+.about-greet-text {
+  position: relative;
+  width: 48%;
+}
+
+.about-greet h1 {
+  padding-top: 95px;
+  font-size: 56px;
+  font-variant-caps: all-petite-caps;
+}
+
+.about-greet p {
+  font-size: 17px;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  margin-bottom: 25px;
+}
+
+.about-greet img {
+  width: 105px;
+  object-fit: cover;
+  z-index: 10;
+  position: absolute;
+  top: 0;
+  left: 43%;
+  animation: rot-sun 0.5s linear both;
+  animation-timeline: scroll(root);
+  rotate: 240deg;
+}
+
+a.wave {  
+  color: #E35200;
+  font-variant-caps: all-petite-caps;
+  font-size: 20px;
+  font-family: 'StyreneAWeb-Bold';
+  text-decoration-style: solid !important;
+  transition: .3s;
+
+  background: linear-gradient(to bottom, #E35200 0%, #E35200 100%);
+  background-position: 0 100%;
+  background-repeat: repeat-x;
+  background-size: 1px 2px;
+  padding-bottom: 5px;
+}
+
+a.wave:hover {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .5s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='tomato' stroke-width='2' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
+  background-position: 0 100%;
+  background-size: auto 4px;
+  background-repeat: repeat-x;
+  text-decoration: none;
+  transition: .3s;
+}
+
+/* ---------------------------------------- */
 
 .about-block {
   display: flex;
@@ -232,7 +225,7 @@
 }
 
 .about-block-img {
-  width: 50%;
+  width: 45%;
   position: relative;
   display: flex;
   align-items: center;
@@ -240,7 +233,7 @@
 }
 
 img.about-block-1 {
-  width: 75%;
+  width: 70%;
   height: 90vh;
   object-fit: cover;
 }
@@ -250,25 +243,39 @@ img.about-block-2 {
   height: 330px;
   position: absolute;
   object-fit: cover;
-  bottom: -20px;
+  bottom: -180px;
   right: 0;
+  
+  animation: a-move 1s linear both;
+  animation-timeline: scroll(root);
+}
+
+
+@keyframes a-move {
+0% {
+  transform: translateY(var(--origin, 0%));
+}
+100% {
+  transform: translateY(var(--destination, -140%));
+}
 }
 
 .about-block-text-cont {
-  width: 50%;
+  width: 55%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .about-block-text {
-  width: 60%;
+  width: 70%;
   color: #E35200;
 }
 
-.about-block-text h3 {
+.about-block-text h1 {
   font-variant-caps: all-petite-caps;
-  font-size: 38px;
+  font-size: 56px;
+  line-height: .9;
 }
 
 .about-block-text p {
@@ -293,29 +300,6 @@ img.about-block-2 {
   color: #F5F2EB;
 }
 
-/* .about-block-text a {  
-  color: #E35200;
-  font-variant-caps: all-petite-caps;
-  font-size: 18px;
-  font-family: 'StyreneAWeb-Bold';
-  text-decoration-style: solid !important;
-  transition: .3s;
-
-  background: linear-gradient(to bottom, #E35200 0%, #E35200 100%);
-  background-position: 0 100%;
-  background-repeat: repeat-x;
-  background-size: 1px 2px;
-  padding-bottom: 5px;
-}
-
-.about-block-text a:hover {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .5s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='orange' stroke-width='2' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
-  background-position: 0 100%;
-  background-size: auto 4px;
-  background-repeat: repeat-x;
-  text-decoration: none;
-  transition: .3s;
-} */
 
 /* ------------------------------------------ */
 
@@ -325,12 +309,12 @@ img.about-block-2 {
   align-items: center;
   width: 100%;
   color: #E35200;
-  margin: 150px 0 130px 0;
+  margin: 110px 0 130px 0;
 }
 
 .about-info h1 {
-  font-size: 56px;
-  width: 85%;
+  font-size: 60px;
+  width: 95%;
   line-height: .9;
   font-variant-caps: all-petite-caps;
   text-align: center;
@@ -352,12 +336,40 @@ img.about-block-2 {
   margin-top: 0;
 }
 
-.about-info-text p {
+.ait-cont {
   width: 42%;
   padding-right: 6%;
   font-size: 17px;
   line-height: 1.2;
   letter-spacing: -0.02em;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+a.ait-wave {  
+  color: #E35200;
+  /* font-variant-caps: all-petite-caps; */
+  font-size: 17px;
+  font-family: 'StyreneAWeb-Regular';
+  text-decoration-style: solid !important;
+  transition: .3s;
+
+  background: linear-gradient(to bottom, #E35200 0%, #E35200 100%);
+  background-position: 0 100%;
+  background-repeat: repeat-x;
+  background-size: 1px 1.5px;
+  padding-bottom: 5px;
+  margin-top: 10px;
+}
+
+a.ait-wave:hover {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .5s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='tomato' stroke-width='2' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
+  background-position: 0 100%;
+  background-size: auto 4px;
+  background-repeat: repeat-x;
+  text-decoration: none;
+  transition: .3s;
 }
 
 
