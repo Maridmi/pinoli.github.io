@@ -55,9 +55,6 @@ body {
 
 h1 {
     font-family: 'StyreneAWeb-Medium';
-    /* letter-spacing: -0.02em; */
-    /* line-height: 0.6; */
-    /* font-variant-caps: all-petite-caps; */
     line-height: 1;
 }
 
@@ -117,7 +114,6 @@ a:hover {
     font-variant-caps: all-petite-caps;
     text-decoration: none;
     font-size: 20px;
-    /* margin-right: 25px; */
     padding-right: 30px;
     text-align: end;
 }
@@ -314,6 +310,7 @@ video.img-2 {
     left: 30px;
 	animation: scale2 0.5s linear both;
 	animation-timeline: scroll(root);
+    background-color: #901c1c41;
 }
 
 img.img-3 {
@@ -781,7 +778,7 @@ select {
 footer {
     width: 100%;
     height: 100vh;
-    background-image: url("../img/foo-1.png");
+    background-image: url("../img/foo-2.png");
     background-size: auto 100%;
     display: flex;
     align-items: center;
@@ -1122,7 +1119,7 @@ img.menu-img {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 10px;
+    margin: 9px;
 }
 
 .c-link p {
@@ -1134,9 +1131,14 @@ img.menu-img {
 
 .c-link a, .c-link h4 {
     color: #E35200;
-    font-size: 19px;
+    font-size: 18.5px;
     font-family: 'StyreneAWeb-Medium';
     margin: 0;
+}
+
+.c-link a:hover {
+    color: #E35200;
+    opacity: .7;
 }
 
 .cont-soc img {
