@@ -15,28 +15,45 @@
 </head>
 
 <body>
-    <div class="topnav so-row">
-        <div class="navlist not-main">
+    <div class="topnav not-main so-row">
+        <div class="navlist">
             <a href="/pinoli.github.io/menu">Меню</a>
             <a href="/pinoli.github.io/about">О нас</a>
             <a href="/pinoli.github.io/contacts">Контакты</a>
         </div>
         <div class="nav-img">
-            <a href="/pinoli.github.io"><img src="img/logo-r-f.svg"></a>
+            <a href="/pinoli.github.io"><img src="img/logo-w.svg"></a>
         </div>
-        <a href="#book" class="nav-book not-main">Забронировать стол</a>
+        <a href="#book" class="nav-book book-desk" id="navbook">Забронировать стол</a>
     </div>
 
-    <div class="topnav-fixed so-row" id="navbar">
-        <div class="nav-fixed-links">
+    <div class="topnav-mob not-main so-row">
+        <a href="javascript:void(0);" class="icon" onclick="navMobile()"><img src="img/mob-menu-fix.svg"></a>
+        <div class="nav-img">
+            <a href="/pinoli.github.io"><img src="img/logo-r-nav.svg"></a>
+        </div>
+        <div class="navlist navlist-not-main" id="myLinks">
             <a href="/pinoli.github.io/menu">Меню</a>
             <a href="/pinoli.github.io/about">О нас</a>
             <a href="/pinoli.github.io/contacts">Контакты</a>
+            <a href="#book" class="book-mobile">Забронировать стол</a>
+        </div>
+        <a href="#book" class="nav-book" id="navbookm">БРОНЬ</a>
+    </div>
+
+    <div class="topnav-fixed so-row" id="navbar">
+        <a href="javascript:void(0);" class="iconfix" id="iconfix" onclick="navMobileFix()"><img src="img/mob-menu-fix.svg"></a>
+        <div class="nav-fixed-links" id="myLinksFix">
+            <a href="/pinoli.github.io/menu">Меню</a>
+            <a href="/pinoli.github.io/about">О нас</a>
+            <a href="/pinoli.github.io/contacts">Контакты</a>
+            <a href="#book" class="book-mobile">Забронировать стол</a>
         </div>
         <div class="nav-fixed-img">
             <a href="/pinoli.github.io"><img src="img/logo-r.svg"></a>
         </div>
         <a href="#book" class="nav-fixed-book">Забронировать стол</a>
+        <a href="#book" class="nav-fixed-book-m" id="navbookm">БРОНЬ</a>
     </div>
 
     <div class="cover-about">
@@ -192,7 +209,7 @@
                 </div>
             </div>
 
-            <img src="img/logo-r.svg">
+            <img src="img/logo-r.svg" class="foo-logo">
 
             <div class="foo-bot">
                 <div class="foo-menu">
