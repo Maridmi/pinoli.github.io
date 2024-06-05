@@ -1,11 +1,13 @@
 $(window).scroll(function() {
     if ($(window).scrollTop() > 130) {
         // document.getElementById("navbar").style.opacity = "1";
+        document.getElementById("iconfix").style.opacity = "1";
         document.getElementById("navbar").style.display = "flex";
         document.getElementById("navbar").style.transition = ".3s";
     }
     else {
         // document.getElementById("navbar").style.opacity = "0";
+        document.getElementById("iconfix").style.opacity = "0";
         document.getElementById("navbar").style.display = "none";
         document.getElementById("navbar").style.top = "-80px";
         document.getElementById("navbar").style.transition = ".3s";
@@ -47,5 +49,14 @@ function navMobile() {
         x.style.display = "none";
     } else {
         x.style.display = "block";
+    }
+}
+
+function navMobileFix() {
+    var x = document.getElementById("myLinksFix");
+    if (x.style.display === "flex") {
+        x.style.display = "none";
+    } else {
+        x.style.display = "flex";
     }
 }
