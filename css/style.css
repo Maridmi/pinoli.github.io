@@ -1872,6 +1872,7 @@ img.menu-img {
     .contact-cont h2 {
         font-size: 70px;
         margin-bottom: 30px;
+        margin: 0 auto 30px auto;
     }
     
     .bottom-img-cont h2 {
