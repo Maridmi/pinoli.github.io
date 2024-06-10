@@ -1,4 +1,4 @@
-@import "https://unpkg.com/normalize.css";
+/* @import "https://unpkg.com/normalize.css"; */
 
 @font-face {
     font-family: 'StyreneAWeb-Bold';
@@ -1890,5 +1890,4 @@ img.menu-img {
         min-width: 320px;
         padding: 10px 25px 13px 25px;
     }
-
 }
