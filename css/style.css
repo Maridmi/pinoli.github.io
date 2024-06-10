@@ -1872,7 +1872,9 @@ img.menu-img {
     .contact-cont h2 {
         font-size: 70px;
         margin-bottom: 30px;
-        margin: 0 auto 30px auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     
     .bottom-img-cont h2 {
@@ -1884,7 +1886,7 @@ img.menu-img {
     }
 
     .c-buttons a {
-        margin: 8px 0;
+        margin: 8px auto;
         min-width: 320px;
         padding: 10px 25px 13px 25px;
     }
