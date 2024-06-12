@@ -1193,6 +1193,7 @@ select {
 
     input.submit {
         margin-top: 40px;
+        min-width: 330px;
     }
 }
 
@@ -1794,7 +1795,6 @@ img.menu-img {
     font-variant-caps: all-petite-caps;
     font-family: 'StyreneAWeb-Medium';
     font-size: 22px;
-    text-align: center;
 }
 
 .button-cont-left {
@@ -1873,6 +1873,7 @@ img.menu-img {
     .c-buttons a {
         margin: 6px;
         padding: 7px 25px 11px 25px;
+        text-align: center;
     }
 }
 
@@ -1898,13 +1899,15 @@ img.menu-img {
     }
 
     .c-buttons {
-        /* flex-wrap: wrap; */
         flex-direction: column;
     }
 
     .c-buttons a {
         margin: 8px auto;
-        /* min-width: 320px; */
-        padding: 10px 60px 13px 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px 0 13px 0;
+        min-width: 330px;
     }
 }
