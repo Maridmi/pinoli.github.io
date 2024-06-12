@@ -214,8 +214,8 @@ a:hover {
         z-index: 100;
     }
 
-    .icon, .nav-book {
-        width: 25%;
+    .icon {
+        width: 16%;
     }
 
     a.nav-book {
@@ -1887,16 +1887,12 @@ img.menu-img {
         font-size: 70px;
         margin-bottom: 30px;
         -webkit-appearance: none;
-        width: 100%;
-        text-align: center;
     }
     
     .bottom-img-cont h2 {
         font-size: 70px;
-        margin: 0 30px;
-        text-align: center;
         -webkit-appearance: none;
-        width: 100%;
+        text-align: center;
     }
 
     .c-buttons {
