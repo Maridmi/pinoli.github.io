@@ -11,11 +11,9 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-  margin-top: 25vh;
 }
 
 .cover-about-desc h2 {
-  font-variant-caps: all-petite-caps;
   text-align: center;
   transform: rotate(-7deg);
   margin-top: 22px;
@@ -23,22 +21,30 @@
 }
 
 @media screen and (min-width: 460px) { 
+  .cover-about-desc {
+    margin-top: 25vh;
+  }
+
   .cover-about-desc img {
     width: 250px;
   }
   
   .cover-about-desc h2 {
-    font-size: 100px;
+    font-size: 80px;
   }
 }
 
 @media screen and (max-width: 460px) { 
+  .cover-about-desc {
+    margin-top: 20vh;
+  }
+
   .cover-about-desc img {
     width: 200px;
   }
   
   .cover-about-desc h2 {
-    font-size: 52px;
+    font-size: 38px;
   }
 }
 
@@ -172,17 +178,17 @@
 
 @media screen and (max-width: 460px) { 
   .carousel {
-    margin-top: 20px;
+    margin-top: 40px;
   }
 
   .carousel__list {
-    height: 40vh;
+    height: 38vh;
     max-width: 100vw;
   }
   
   .carousel__item {
     width: 50%;
-    height: 42vh;
+    height: 40vh;
   }
 
   ul {
@@ -207,10 +213,6 @@
   position: relative;
 }
 
-.about-greet h1 {
-  font-variant-caps: all-petite-caps;
-}
-
 .about-greet p {
   line-height: 1.5;
   letter-spacing: -0.02em;
@@ -225,8 +227,7 @@
 
 a.wave {  
   color: #E35200;
-  font-variant-caps: all-petite-caps;
-  font-size: 20px;
+  font-size: 16px;
   font-family: 'StyreneAWeb-Bold';
   text-decoration-style: solid !important;
   transition: .3s;
@@ -278,7 +279,7 @@ a.wave:hover {
 
 @media screen and (max-width: 460px) { 
   .about-greet {
-    margin: 80px 0 80px 0;
+    margin: 90px 0 80px 0;
   }
 
   .about-greet-text {
@@ -286,18 +287,19 @@ a.wave:hover {
   }
   
   .about-greet h1 {
-    padding-top: 80px;
-    font-size: 40px;
+    padding-top: 120px;
+    font-size: 34px;
+    margin-bottom: 20px;
   }
   
   .about-greet p {
     font-size: 16px;
-    margin-bottom: 15px;
+    margin-bottom: 25px;
   }
 
   .about-greet img {
     width: 95px;
-    left: 34%;
+    left: 36%;
     animation: 20s linear 0s normal none infinite running rot-sun;
     -webkit-animation: 20s linear 0s normal none infinite running rot-sun;
   }
@@ -346,11 +348,6 @@ img.about-block-2 {
   color: #E35200;
 }
 
-.about-block-text h1 {
-  font-variant-caps: all-petite-caps;
-  line-height: .9;
-}
-
 .about-block-text p {
   line-height: 1.2;
   letter-spacing: -0.02em;
@@ -358,10 +355,8 @@ img.about-block-2 {
 
 .about-block-text a {
   border: 1px solid #E35200;
-  padding: 7px 24px 10px 24px;
   color: #E35200;
-  font-size: 19px;
-  font-variant-caps: all-petite-caps;
+  font-size: 16px;
   font-family: 'StyreneAWeb-Medium';
 }
 
@@ -407,12 +402,16 @@ img.about-block-2 {
   }
   
   .about-block-text h1 {
-    font-size: 56px;
+    font-size: 42px;
   }
   
   .about-block-text p {
-    font-size: 17px;
+    font-size: 16px;
     margin: 25px 0 40px 0;
+  }
+
+  .about-block-text a {
+    padding: 7px 24px 10px 24px;
   }
 }
 
@@ -448,13 +447,19 @@ img.about-block-2 {
   }
   
   .about-block-text h1 {
-    font-size: 40px;
+    font-size: 32px;
     padding-top: 80px;
   }
   
   .about-block-text p {
     font-size: 16px;
     margin: 25px 0 40px 0;
+  }
+
+  .about-block-text a {
+    width: 100%;
+    display: block;
+    padding: 11px 0;
   }
 }
 
@@ -466,11 +471,6 @@ img.about-block-2 {
   align-items: center;
   width: 100%;
   color: #E35200;
-}
-
-.about-info h1 {
-  line-height: .9;
-  font-variant-caps: all-petite-caps;
 }
 
 .about-info-text {
@@ -493,7 +493,6 @@ img.about-block-2 {
 
 a.ait-wave {  
   color: #E35200;
-  /* font-variant-caps: all-petite-caps; */
   font-size: 17px;
   font-family: 'StyreneAWeb-Regular';
   text-decoration-style: solid !important;
@@ -523,7 +522,7 @@ a.ait-wave:hover {
   }
 
   .about-info h1 {
-    font-size: 60px;
+    font-size: 40px;
     width: 95%;
     margin-bottom: 80px;
     text-align: center;
@@ -554,9 +553,9 @@ a.ait-wave:hover {
   }
 
   .about-info h1 {
-    font-size: 40px;
+    font-size: 30px;
     width: 100%;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     text-align: start;
   }
   
@@ -574,6 +573,11 @@ a.ait-wave:hover {
   .ait-cont {
     width: 100%;
     font-size: 16px;
+  }
+
+  
+  .ait-cont p {
+    margin-bottom: 25px;
   }
 }
 

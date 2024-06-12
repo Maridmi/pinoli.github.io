@@ -55,22 +55,22 @@ body {
 
 h1 {
     font-family: 'StyreneAWeb-Medium';
-    line-height: 1;
+    line-height: 1.2;
 }
 
 h2 {
     font-family: 'StyreneAWeb-MediumItalic';
-    line-height: 1;
+    line-height: 1.2;
 }
 
 h3 {
     font-family: 'StyreneAWeb-Bold';
-    line-height: 1;
+    line-height: 1.2;
 }
 
 h4 {
     font-family: 'StyreneAWeb-BoldItalic';
-    line-height: 1;
+    line-height: 1.2;
 }
 
 p, a, li {
@@ -238,7 +238,7 @@ a:hover {
     top: 0;
     width: 100vw;
     height: 80px;
-    z-index: 101;
+    z-index: 100;
 }
 
 .nav-fixed-links {
@@ -253,10 +253,8 @@ a:hover {
     float: left;
     color: #E35200;
     text-decoration: none;
-    font-size: 17px;
-    font-variant-caps: all-petite-caps;
+    font-size: 16px;
     font-family: 'StyreneAWeb-Medium';
-    font-size: 20px;
 }
 
 .nav-fixed-img {
@@ -324,8 +322,8 @@ a:hover {
 
     .nav-fixed-links a {
         padding: 10px;
-        /* text-align: center; */
-        font-size: 24px;
+        text-align: center;
+        font-size: 20px;
         text-decoration: none;
     }
 
@@ -365,7 +363,6 @@ a:hover {
 
 .greet h2 {
     color: #F5F2EB;
-    font-variant-caps: all-petite-caps;
     text-align: center;
 }
 
@@ -395,7 +392,7 @@ img.greet-round-img {
 
 @media screen and (min-width: 460px) {
     .greet h2 {
-        font-size: 100px;
+        font-size: 60px;
         transform: rotate(-7deg);
         margin: 22px 0 8vh 0;
     }
@@ -423,10 +420,9 @@ img.greet-round-img {
 
 @media screen and (max-width: 460px) {
     .greet h2 {
-        font-size: 72px;
-        line-height: .85;
-        /* transform: rotate(-4deg); */
-        margin: 20px 0 30px 0;
+        font-size: 54px;
+        transform: rotate(-2deg);
+        margin: 25px 0 35px 0;
     }
 
     .greet-cont-top {
@@ -459,7 +455,6 @@ img.greet-round-img {
 .main-pics h1 {
     width: 100%;
     text-align: center;
-    font-variant-caps: all-petite-caps;
     z-index: 2;
 }
 
@@ -557,8 +552,12 @@ img.img-sun {
 
 
 @media screen and (min-width: 460px) {    
+    .main-pics {
+        padding: 0 30px;
+    }
+    
     .main-pics h1 {
-        font-size: 52px;
+        font-size: 42px;
         margin-top: 70px;
     }
 
@@ -603,25 +602,25 @@ img.img-sun {
     }
 }
 
-@media screen and (max-width: 460px) {    
-    .main-pics .so-row {
+@media screen and (max-width: 460px) { 
+    .main-pics {
         padding: 0 20px;
     }
 
     .main-pics h1 {
-        font-size: 35px;
+        font-size: 30px;
         margin-top: 60px;
     }
 
     .img-cont {
         position: relative;
-        min-height: 90vh;
+        min-height: 86vh;
     }
 
     img.img-1 {
         width: 50vw;
         height: 32vh;
-        top: -30px;
+        top: -15px;
         left: 20%;
     }
     
@@ -631,14 +630,14 @@ img.img-sun {
     
     img.img-3 {
         width: 52vw;
-        top: 30vh;
+        top: 37vh;
         right: 0;
     }
     
     img.img-4 {
         width: 55vw;
         height: 40vh;
-        top: 25vh;
+        top: 26vh;
     }
     
     img.img-sun {
@@ -676,14 +675,9 @@ img.img-sun {
     width: 100%;
 }
 
-.about-main-text p {
-    padding-bottom: 8px;
-}
-
 .about-main-text a {
-    font-variant-caps: all-petite-caps;
     color: #882100;
-    font-size: 18px;
+    font-size: 16px;
     font-family: 'StyreneAWeb-Bold';
     text-decoration-style: solid !important;
     transition: .3s;
@@ -745,7 +739,6 @@ img.img-sun {
         position: absolute;
         left: 23%;
         z-index: 100;
-        font-variant-caps: all-petite-caps;
         line-height: .78;
         letter-spacing: -4px;
     }
@@ -758,11 +751,16 @@ img.img-sun {
         z-index: 100;
         font-size: 16px;
     }
+
+    
+    .about-main-text p {
+        padding-bottom: 8px;
+    }
 }
 
 @media screen and (max-width: 460px) {  
     .about-main {
-        height: 115vh;
+        height: 100vh;
     }
 
     img.bw-1 {
@@ -794,15 +792,14 @@ img.img-sun {
     }
     
     .about-main h2 {
-        font-size: 76px;
+        font-size: 56px;
         text-align: center;
         position: absolute;
         z-index: 100;
         left: 0;
-        top: 32vh;
-        font-variant-caps: all-petite-caps;
-        line-height: .8;
+        top: 36vh;
         letter-spacing: -4px;
+        line-height: 1.1;
     }
     
     .about-main-text {
@@ -810,10 +807,14 @@ img.img-sun {
         text-align: center;
         position: absolute;
         left: 0;
-        top: 74vh;
+        top: 67vh;
         z-index: 100;
         font-size: 15px;
         padding: 0 30px;
+    }
+
+    .about-main-text p {
+        padding-bottom: 30px;
     }
 }
 
@@ -834,10 +835,7 @@ img.img-sun {
 }
 
 .main-menu h3 {
-    font-variant-caps: all-petite-caps;
-    font-size: 48px;
     margin: 10px auto 20px auto;
-    line-height: .95;
     text-align: center;
 }
 
@@ -874,6 +872,10 @@ img.fresco {
 
 
 @media screen and (min-width: 460px) { 
+    .main-menu h3 {
+        font-size: 42px;
+    }
+
     .main-menu-img {
         width: 100vw;
         display: grid;
@@ -890,8 +892,7 @@ img.fresco {
     }
 
     .ov-text h2 {
-        font-size: 90px;
-        font-variant-caps: all-petite-caps;
+        font-size: 70px;
         margin-bottom: 15px;
         width: 100%;
     }
@@ -918,6 +919,10 @@ img.fresco {
 }
 
 @media screen and (max-width: 460px) { 
+    .main-menu h3 {
+        font-size: 32px;
+    }
+
     .main-menu {
         padding: 60px 30px 70px 30px;
     }
@@ -938,8 +943,7 @@ img.fresco {
     }
 
     .ov-text h2 {
-        font-size: 55px;
-        font-variant-caps: all-petite-caps;
+        font-size: 38px;
         margin-bottom: 15px;
         width: 100%;
     }
@@ -979,7 +983,6 @@ img.fresco {
 
 .book-h h3 {
     margin: 10px auto 20px auto;
-    line-height: 1.1;
 }
 
 .book-h p {
@@ -1230,8 +1233,6 @@ footer {
 
 .foo-top p, .foo-top a {
     font-family: 'StyreneAWeb-Bold';
-    font-variant-caps: all-petite-caps;
-    line-height: 1;
 }
 
 #footer {
@@ -1285,7 +1286,7 @@ footer {
     
     .foo-left {
         width: 30%;
-        font-size: 18px;
+        font-size: 16px;
     }
     
     .foo-center {
@@ -1300,7 +1301,7 @@ footer {
         flex-direction: column;
         align-items: flex-end;
         text-align: end;
-        font-size: 18px;
+        font-size: 16px;
     }
     
     .foo-cont img {
@@ -1312,8 +1313,7 @@ footer {
         width: 30%;
         display: flex;
         flex-direction: column;
-        font-variant-caps: all-petite-caps;
-        font-size: 18px;
+        font-size: 16px;
     }
     
     .foo-menu a, .foo-links a {
@@ -1332,8 +1332,7 @@ footer {
         display: flex;
         flex-direction: column;
         align-items: center;
-        font-variant-caps: all-petite-caps;
-        font-size: 25px;
+        font-size: 20px;
     }
     
     .foo-soc {
@@ -1346,6 +1345,10 @@ footer {
     .foo-soc img {
         width: 32px;
         margin-left: 15px;
+    }
+
+    .foo-links-mob {
+        display: none;
     }
 }
 
@@ -1370,10 +1373,14 @@ footer {
         width: 100%;
         display: flex;
         flex-direction: column;
-        font-size: 20px;
+        font-size: 15.5px;
         position: absolute;
         margin: auto;
         top: 25%;
+    }
+
+    .foo-left a {
+        margin-bottom: 10px;
     }
     
     .foo-center {
@@ -1384,11 +1391,15 @@ footer {
         width: 100%;
         display: flex;
         flex-direction: column;
-        font-size: 16px;
+        font-size: 14px;
         opacity: .6;
         position: absolute;
         margin: auto;
         bottom: 11%;
+    }
+
+    .foo-right p {
+        margin-bottom: 10px;
     }
     
     .foo-logo {
@@ -1402,34 +1413,24 @@ footer {
         width: 100%;
         display: flex;
         flex-direction: column;
-        font-variant-caps: all-petite-caps;
-        font-size: 20px;
+        font-size: 16px;
         position: absolute;
         top: 52%;
     }
     
     .foo-menu a, .foo-links a {
         margin: 0;
-        padding: 4px 0;
+        padding: 6px 0;
         font-family: 'StyreneAWeb-Bold';
     }
-    
-    .foo-links a {
-        margin: 0;
-        line-height: 1.05;
-        font-family: 'StyreneAWeb-Bold';
-    }
-    
+
     .foo-links {
-        width: 100%;
-        font-variant-caps: all-petite-caps;
-        font-size: 20px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        position: absolute;
-        top: 33%;
+        display: none;
+    }
+    
+    .foo-left a, .foo-left p {
+        margin-bottom: 13px;
+        font-family: 'StyreneAWeb-Bold';
     }
     
     .foo-soc {
@@ -1486,9 +1487,7 @@ footer {
 
 .cover-desc h2 {
     text-align: center;
-    font-variant-caps: all-petite-caps;
     transform: rotate(-7deg);
-    line-height: .85;
 }
 
 .cover-desc a:hover {
@@ -1505,13 +1504,20 @@ img.cover-back {
     z-index: -1;
 }
 
+.cover-desc a {
+    font-size: 16px;
+    color: #F5F2EB;
+    border: 1px solid #F5F2EB;
+    font-family: 'StyreneAWeb-Medium';
+}
+
 @media screen and (min-width: 460px) { 
     .cover-desk {
         width: 70%;
     }
 
     .cover-desc h2 {
-        font-size: 180px;
+        font-size: 130px;
     }
     
     .cover-buttons {
@@ -1519,12 +1525,7 @@ img.cover-back {
     }
 
     .cover-desc a {
-        font-size: 20px;
-        color: #F5F2EB;
-        border: 1px solid #F5F2EB;
         padding: 8px 18px;
-        font-variant-caps: all-petite-caps;
-        font-family: 'StyreneAWeb-Medium';
         margin: 0 6px;
     }
 }
@@ -1535,11 +1536,13 @@ img.cover-back {
     }
 
     .cover-desc h2 {
-        font-size: 110px;
+        font-size: 80px;
     }
     
     .cover-buttons {
+        width: 100%;
         margin-top: 60px;
+        padding: 0 30px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -1547,14 +1550,9 @@ img.cover-back {
     }
 
     .cover-desc a {
-        font-size: 20px;
         text-align: center;
-        min-width: 320px;
-        color: #F5F2EB;
-        border: 1px solid #F5F2EB;
-        padding: 16px 18px;
-        font-variant-caps: all-petite-caps;
-        font-family: 'StyreneAWeb-Medium';
+        width: 100%;
+        padding: 16px 0;
         margin: 10px 0;
     }
 }
@@ -1574,12 +1572,10 @@ img.cover-back {
 .fixed-menu a {
     border: 1px solid #E35200;
     background-color: #F5F2EB;
-    padding: 5px 20px 6px 20px;
-    /* border-radius: 30px; */
+    padding: 7px 22px;
     color: #E35200;
-    font-size: 18px;
+    font-size: 14px;
     line-height: 1.5;
-    font-variant-caps: all-petite-caps;
     font-family: 'StyreneAWeb-Medium';
 }
 
@@ -1625,10 +1621,6 @@ img.cover-back {
     color: #E35200;
 }
 
-.menu-items h1 {
-    font-variant-caps: all-petite-caps;
-}
-
 .menu-card {
     display: flex;
     flex-direction: column;
@@ -1642,14 +1634,12 @@ img.cover-back {
 }
 
 .menu-card-desc h3 {
-    font-variant-caps: all-petite-caps;
     margin-bottom: 10px;
 }
 
 .menu-card-desc h4 {
     opacity: .7;
     margin-bottom: 14px;
-    line-height: 1.2;
     letter-spacing: -0.03em;
     font-family: 'StyreneAWeb-Regular';
 }
@@ -1673,7 +1663,7 @@ img.menu-img {
 
 @media screen and (min-width: 460px) {
     .menu-items h1 {
-        font-size: 70px;
+        font-size: 50px;
         margin: 60px 0;
     }
     
@@ -1689,7 +1679,7 @@ img.menu-img {
     }
     
     .menu-card-desc h3 {
-        font-size: 27px;
+        font-size: 22px;
     }
 
     .menu-card-desc h4 {
@@ -1699,7 +1689,7 @@ img.menu-img {
 
 @media screen and (max-width: 460px) {
     .menu-items h1 {
-        font-size: 55px;
+        font-size: 35px;
         margin: 40px 0;
     }
     
@@ -1715,8 +1705,7 @@ img.menu-img {
     }
 
     .menu-card-desc h3 {
-        font-size: 24px;
-        line-height: .85;
+        font-size: 18px;
     }
 
     .menu-card-desc h4 {
