@@ -1369,7 +1369,9 @@ footer {
     }
     
     .foo-left {
-        /* width: 100%; */
+        width: 100%;
+        display: flex;
+        flex-direction: column;
         font-size: 20px;
         position: absolute;
         margin: auto;
@@ -1381,7 +1383,9 @@ footer {
     }
     
     .foo-right {
-        /* width: 100%; */
+        width: 100%;
+        display: flex;
+        flex-direction: column;
         font-size: 16px;
         opacity: .6;
         position: absolute;
