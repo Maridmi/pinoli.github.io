@@ -1822,6 +1822,7 @@ img.menu-img {
     background-color: #00000052;
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: center;
     position: relative;
 }
@@ -1853,10 +1854,6 @@ img.menu-img {
         margin-bottom: 50px;
         text-align: center;
     }
-
-    .bottom-img-cont {
-        align-items: center;
-    }
     
     .bottom-img-cont h2 {
         font-size: 130px;
@@ -1881,12 +1878,14 @@ img.menu-img {
     .contact-cont h2 {
         font-size: 70px;
         margin-bottom: 30px;
+        -webkit-appearance: none;
     }
     
     .bottom-img-cont h2 {
         font-size: 65px;
         margin: 0 30px;
         text-align: center;
+        -webkit-appearance: none;
     }
 
     .c-buttons {
