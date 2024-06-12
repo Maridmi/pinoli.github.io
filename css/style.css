@@ -217,13 +217,9 @@ a:hover {
     }
 
     a.nav-book {
-        text-align: end !important;
-    }
-
-    @supports (-webkit-touch-callout: none) {
-        a.nav-book {
-            text-align: end;
-        }
+        display: flex;
+        justify-content: end;
+        align-items: end;
     }
 }
 
@@ -309,7 +305,9 @@ a:hover {
     }
     
     .nav-fixed-book-m {
-        text-align: end;
+        display: flex;
+        justify-content: end;
+        align-items: end;
     }
 
     .nav-fixed-links {
