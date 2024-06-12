@@ -974,12 +974,10 @@ img.fresco {
 }
 
 .book-h {
-    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    text-align: center;
 }
 
 .book-h h3 {
@@ -1111,6 +1109,7 @@ select {
     .book-h {
         width: 100%;
         padding: 11vh 0 10vh 0;
+        text-align: center;
     }
     
     .book-h h3 {
@@ -1153,12 +1152,16 @@ select {
     }
 
     .book-h {
-        width: 100%;
-        padding: 50px 0 40px 0;
+        margin: 50px auto 40px auto;
     }
     
     .book-h h3 {
         font-size: 44px;
+        text-align: center;
+    }
+
+    .book-h p {
+        text-align: center;
     }
     
     .form-row {
@@ -1175,7 +1178,7 @@ select {
 
     
     input[type="date"] {
-        width: 100%;
+        width: 100% !important;
     }
     
     p.book-polit {
@@ -1731,7 +1734,6 @@ img.menu-img {
 
 .contact-cont h2 {
     font-variant-caps: all-petite-caps;
-    text-align: center;
     transform: rotate(-7deg);
 }
 
@@ -1778,7 +1780,6 @@ img.menu-img {
 .c-buttons {
     display: flex;
     align-items: center;
-    flex-direction: row;
     justify-content: center;
     margin-top: 20px;
 }
@@ -1827,7 +1828,6 @@ img.menu-img {
 
 .bottom-img-cont h2 {
     color: #F5F2EB;
-    text-align: center;
     font-variant-caps: all-petite-caps;
     transform: rotate(-7deg);
     line-height: .75;
@@ -1851,6 +1851,7 @@ img.menu-img {
     .contact-cont h2 {
         font-size: 125px;
         margin-bottom: 50px;
+        text-align: center;
     }
 
     .bottom-img-cont {
@@ -1859,6 +1860,11 @@ img.menu-img {
     
     .bottom-img-cont h2 {
         font-size: 130px;
+        text-align: center;
+    }
+
+    .c-buttons {
+        flex-direction: row;
     }
 
     .c-buttons a {
@@ -1875,21 +1881,22 @@ img.menu-img {
     .contact-cont h2 {
         font-size: 70px;
         margin-bottom: 30px;
-        float: unset;
     }
     
     .bottom-img-cont h2 {
-        font-size: 60px;
+        font-size: 65px;
         margin: 0 30px;
+        text-align: center;
     }
 
     .c-buttons {
-        flex-wrap: wrap;
+        /* flex-wrap: wrap; */
+        flex-direction: column;
     }
 
     .c-buttons a {
         margin: 8px auto;
-        min-width: 320px;
-        padding: 10px 25px 13px 25px;
+        /* min-width: 320px; */
+        padding: 10px 60px 13px 60px;
     }
 }
