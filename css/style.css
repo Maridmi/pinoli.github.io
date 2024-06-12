@@ -1837,7 +1837,7 @@ img.menu-img {
     color: #F5F2EB;
     /* font-variant-caps: all-petite-caps; */
     transform: rotate(-7deg);
-    line-height: .75;
+    line-height: 1;
     margin: 0;
 }
 
@@ -1890,7 +1890,7 @@ img.menu-img {
     }
     
     .bottom-img-cont h2 {
-        font-size: 70px;
+        font-size: 50px;
         -webkit-appearance: none;
         text-align: center;
     }
