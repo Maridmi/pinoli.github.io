@@ -19,7 +19,7 @@
   text-align: center;
   transform: rotate(-7deg);
   margin-top: 22px;
-  z-index: 100;
+  z-index: 99;
 }
 
 @media screen and (min-width: 460px) { 

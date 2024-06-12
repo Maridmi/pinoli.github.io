@@ -107,17 +107,15 @@ a:hover {
 
 .navlist a {
     color: #F5F2EB;
-    /* font-variant-caps: all-petite-caps; */
     text-decoration: none;
-    font-size: 20px;
+    font-size: 16px;
     padding-right: 30px;
     text-align: end;
 }
 
 .nav-book {
     color: #F5F2EB;
-    /* font-variant-caps: all-petite-caps; */
-    font-size: 20px;
+    font-size: 16px;
     text-decoration: 2px solid #F5F2EB;
     text-align: end;
 }
@@ -177,7 +175,7 @@ a:hover {
         position: absolute;
         padding-top: 30px;
         width: 100%;
-        z-index: 10;
+        z-index: 100;
     }
 
     .navlist {
@@ -194,9 +192,8 @@ a:hover {
     }
 
     .navlist a {
-        padding: 10px;
-        /* text-align: center; */
-        font-size: 24px;
+        padding: 15px;
+        font-size: 20px;
         color: #e9e5de;
         text-decoration: none;
         display: flex;
@@ -981,9 +978,8 @@ img.fresco {
 }
 
 .book-h h3 {
-    font-variant-caps: all-petite-caps;
     margin: 10px auto 20px auto;
-    line-height: .95;
+    line-height: 1.1;
 }
 
 .book-h p {
@@ -1113,7 +1109,8 @@ select {
     }
     
     .book-h h3 {
-        font-size: 48px;
+        font-size: 36px;
+        margin-bottom: 25px;
     }
 
     .form-row {
@@ -1156,7 +1153,7 @@ select {
     }
     
     .book-h h3 {
-        font-size: 44px;
+        font-size: 32px;
         text-align: center;
     }
 
@@ -1756,11 +1753,11 @@ img.menu-img {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 9px;
+    margin: 12px 0;
 }
 
 .c-link p {
-    font-size: 17px;
+    font-size: 13px;
     margin-bottom: 10px;
     opacity: .6;
 }
@@ -1791,7 +1788,7 @@ img.menu-img {
 
 .c-buttons a {
     font-family: 'StyreneAWeb-Medium';
-    font-size: 22px;
+    font-size: 16px;
 }
 
 .button-cont-left {
@@ -1848,17 +1845,17 @@ img.menu-img {
 
 @media screen and (min-width: 460px) {
     .contact-cont {
-        padding: 140px 0 100px 0;
+        padding: 180px 0 100px 0;
     }
     
     .contact-cont h2 {
-        font-size: 125px;
+        font-size: 90px;
         margin-bottom: 50px;
         text-align: center;
     }
     
     .bottom-img-cont h2 {
-        font-size: 130px;
+        font-size: 90px;
         text-align: center;
     }
 
@@ -1868,20 +1865,20 @@ img.menu-img {
 
     .c-buttons a {
         margin: 6px;
-        padding: 7px 25px 11px 25px;
+        padding: 14px 28px;
         text-align: center;
     }
 }
 
 @media screen and (max-width: 460px) {
     .contact-cont {
-        padding: 140px 0 80px 0;
+        padding: 160px 0 80px 0;
     }
     
     .contact-cont h2 {
-        font-size: 70px;
-        margin-bottom: 30px;
-        width: fit-content;
+        font-size: 50px;
+        margin-bottom: 40px;
+        text-align: center;
     }
     
     .bottom-img-cont h2 {
