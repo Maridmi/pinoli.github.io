@@ -971,6 +971,7 @@ img.fresco {
     align-items: center;
     justify-content: center;
     color: #E35200;
+    -webkit-appearance: none;
 }
 
 .book-h {
