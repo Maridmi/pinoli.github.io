@@ -1881,13 +1881,16 @@ img.menu-img {
         font-size: 70px;
         margin-bottom: 30px;
         -webkit-appearance: none;
+        width: 100%;
+        text-align: center;
     }
     
     .bottom-img-cont h2 {
-        font-size: 65px;
+        font-size: 70px;
         margin: 0 30px;
         text-align: center;
         -webkit-appearance: none;
+        width: 100%;
     }
 
     .c-buttons {
