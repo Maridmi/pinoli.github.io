@@ -1250,6 +1250,10 @@ footer {
     color: #E35200;
 }
 
+.foo-top a:hover, .foo-bot a:hover {
+    opacity: .55;
+}
+
 .foo-top p, .foo-top a {
     font-family: 'StyreneAWeb-Bold';
 }
@@ -1276,10 +1280,6 @@ footer {
 
 .foo-cont a {
     color: #E35200;
-}
-
-.foo-cont a:hover {
-    opacity: 0.55;
 }
 
 @media screen and (min-width: 460px) { 
@@ -1423,9 +1423,12 @@ footer {
     
     .foo-logo {
         align-content: center;
-        width: 145px;
         position: absolute;
         top: 13%;
+    }
+
+    .foo-logo img {
+        width: 145px;
     }
     
     .foo-menu {
@@ -1519,9 +1522,12 @@ footer {
     
     .foo-logo {
         align-content: center;
-        width: 145px;
         position: absolute;
         top: 13%;
+    }
+
+    .foo-logo img {
+        width: 145px;
     }
     
     .foo-menu {
