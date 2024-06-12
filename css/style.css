@@ -107,7 +107,7 @@ a:hover {
 
 .navlist a {
     color: #F5F2EB;
-    font-variant-caps: all-petite-caps;
+    /* font-variant-caps: all-petite-caps; */
     text-decoration: none;
     font-size: 20px;
     padding-right: 30px;
@@ -116,7 +116,7 @@ a:hover {
 
 .nav-book {
     color: #F5F2EB;
-    font-variant-caps: all-petite-caps;
+    /* font-variant-caps: all-petite-caps; */
     font-size: 20px;
     text-decoration: 2px solid #F5F2EB;
     text-align: end;
@@ -1740,7 +1740,6 @@ img.menu-img {
 }
 
 .contact-cont h2 {
-    font-variant-caps: all-petite-caps;
     transform: rotate(-7deg);
 }
 
@@ -1762,7 +1761,6 @@ img.menu-img {
 
 .c-link p {
     font-size: 17px;
-    font-variant-caps: all-petite-caps;
     margin-bottom: 10px;
     opacity: .6;
 }
@@ -1792,7 +1790,6 @@ img.menu-img {
 }
 
 .c-buttons a {
-    font-variant-caps: all-petite-caps;
     font-family: 'StyreneAWeb-Medium';
     font-size: 22px;
 }
@@ -1835,9 +1832,8 @@ img.menu-img {
 
 .bottom-img-cont h2 {
     color: #F5F2EB;
-    /* font-variant-caps: all-petite-caps; */
     transform: rotate(-7deg);
-    line-height: 1;
+    line-height: 1.1;
     margin: 0;
 }
 
@@ -1885,13 +1881,11 @@ img.menu-img {
     .contact-cont h2 {
         font-size: 70px;
         margin-bottom: 30px;
-        -webkit-appearance: none;
         width: fit-content;
     }
     
     .bottom-img-cont h2 {
-        font-size: 50px;
-        -webkit-appearance: none;
+        font-size: 45px;
         text-align: center;
     }
 
