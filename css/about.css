@@ -16,13 +16,13 @@
 .cover-about-desc h2 {
   text-align: center;
   transform: rotate(-7deg);
-  margin-top: 22px;
+  margin-top: 35px;
   z-index: 99;
 }
 
 @media screen and (min-width: 460px) { 
   .cover-about-desc {
-    margin-top: 25vh;
+    margin-top: 26vh;
   }
 
   .cover-about-desc img {
@@ -30,7 +30,7 @@
   }
   
   .cover-about-desc h2 {
-    font-size: 80px;
+    font-size: 70px;
   }
 }
 
@@ -163,7 +163,7 @@
 
 @media screen and (min-width: 460px) { 
   .carousel {
-    margin-top: -15px;
+    margin-top: -8px;
   }
 
   .carousel__list {
@@ -259,13 +259,14 @@ a.wave:hover {
   }
   
   .about-greet h1 {
-    padding-top: 95px;
-    font-size: 56px;
+    padding-top: 130px;
+    font-size: 36px;
+    margin-bottom: 25px;
   }
   
   .about-greet p {
     font-size: 17px;
-    margin-bottom: 25px;
+    margin-bottom: 35px;
   }
 
   .about-greet img {
@@ -398,20 +399,20 @@ img.about-block-2 {
   }
   
   .about-block-text {
-    width: 70%;
+    width: 60%;
   }
   
   .about-block-text h1 {
-    font-size: 42px;
+    font-size: 36px;
   }
   
   .about-block-text p {
     font-size: 16px;
-    margin: 25px 0 40px 0;
+    margin: 25px 0 45px 0;
   }
 
   .about-block-text a {
-    padding: 7px 24px 10px 24px;
+    padding: 12px 30px;
   }
 }
 
@@ -460,6 +461,13 @@ img.about-block-2 {
     width: 100%;
     display: block;
     padding: 15px 0;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .about-block-text h1 {
+    font-size: 29px;
+    padding-top: 120px;
   }
 }
 
@@ -522,7 +530,7 @@ a.ait-wave:hover {
   }
 
   .about-info h1 {
-    font-size: 40px;
+    font-size: 50px;
     width: 95%;
     margin-bottom: 80px;
     text-align: center;
@@ -544,6 +552,10 @@ a.ait-wave:hover {
     width: 42%;
     padding-right: 6%;
     font-size: 17px;
+  }
+
+  .ait-p {
+    margin-bottom: 15px;
   }
 }
 
@@ -574,7 +586,6 @@ a.ait-wave:hover {
     width: 100%;
     font-size: 16px;
   }
-
   
   .ait-cont p {
     margin-bottom: 25px;

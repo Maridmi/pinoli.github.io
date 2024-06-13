@@ -1300,6 +1300,14 @@ footer {
     .foo-top {
         align-items: flex-start;
     }
+
+    .foo-top p {
+        margin-bottom: 8px;
+    }
+
+    .foo-margin-p {
+        margin-top: 6px;
+    }
     
     .foo-bot {
         align-items: flex-end;
@@ -1307,13 +1315,13 @@ footer {
     
     .foo-left {
         width: 30%;
-        font-size: 16px;
+        font-size: 14px;
     }
     
     .foo-center {
         width: 30%;
         text-align: center;
-        font-size: 32px;
+        font-size: 28px;
     }
     
     .foo-right {
@@ -1322,7 +1330,7 @@ footer {
         flex-direction: column;
         align-items: flex-end;
         text-align: end;
-        font-size: 16px;
+        font-size: 14px;
     }
     
     .foo-cont img {
@@ -1334,17 +1342,16 @@ footer {
         width: 30%;
         display: flex;
         flex-direction: column;
-        font-size: 16px;
+        font-size: 14px;
     }
     
-    .foo-menu a, .foo-links a {
-        margin: 0;
+    .foo-menu a {
         font-family: 'StyreneAWeb-Bold';
+        margin-top: 11px;
     }
     
     .foo-links a {
-        margin: 0;
-        line-height: 1.05;
+        margin-top: 6px;
         font-family: 'StyreneAWeb-Bold';
     }
     
